@@ -1,1 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medelprojects - Servicios Informáticos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
 
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #ffffff;
+      border-bottom: 3px solid #ff6600;
+    }
+
+    header img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #333333;
+      margin: 10px 0 20px;
+    }
+
+    .boton-cta {
+      display: inline-block;
+      background-color: #ff6600;
+      color: #ffffff;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .boton-cta:hover {
+      background-color: #e65c00;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #333333;
+      border-bottom: 2px solid #ff6600;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 3px solid #ff6600;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #ff6600;
+      color: #ffffff;
+      border: none;
+      padding: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #e65c00;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #333333;
+      border-top: 2px solid #ff6600;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 60px;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe57;
+    }
+
+    .whatsapp-float i {
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .boton-cta {
+        padding: 10px 16px;
+        font-size: 0.95em;
+      }
+
+      input, textarea, button {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo1.jpg" alt="Logo Medelprojects">
+    <h1>Medelprojects</h1>
+    <p>Soluciones confiables en mantenimiento y reparación informática</p>
+    <a href="#formulario" class="boton-cta">Solicitá tu presupuesto</a>
+  </header>
+
+  <section id="beneficios">
+    <h2>¿Por qué elegirnos?</h2>
+    <ul>
+      <li>✅ Atención rápida y personalizada</li>
+      <li>✅ Más de X años de experiencia</li>
+      <li>✅ Garantía en todos los trabajos</li>
+      <li>✅ Servicio a domicilio en Montevideo</li>
+    </ul>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios principales</h2>
+    <ul>
+      <li>🛠️ Reparación de computadoras y notebooks</li>
+      <li>🧼 Limpieza interna y cambio de pasta térmica</li>
+      <li>💾 Recuperación de datos</li>
+      <li>🌐 Configuración de redes y Wi-Fi</li>
+    </ul>
+  </section>
+
+  <section id="testimonios">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <blockquote>“Excelente servicio, me salvaron el trabajo.” – Carla G.</blockquote>
+    <blockquote>“Muy profesionales, rápidos y confiables.” – Martín R.</blockquote>
+  </section>
+
+  <section id="formulario">
+    <h2>Solicitá tu presupuesto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Medelprojects. Todos los derechos reservados.</p>
+    <p>📱 WhatsApp: <a href="https://wa.me/59895221694" target="_blank">Escribinos</a> | 📧 Email: medelsoa@gmail.com</p>
+  </footer>
+
+  <a href="https://wa.me/59895221694" class="whatsapp-float" target="_blank" title="Escribinos por WhatsApp">
+    <i>📱</i>
+  </a>
+
+</body>
+</html>
