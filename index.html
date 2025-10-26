@@ -206,25 +206,88 @@
     <blockquote>“Muy profesionales, rápidos y confiables.” – Martín R.</blockquote>
   </section>
 
-  <section id="formulario">
+ <section id="formulario">
   <h2>Solicitá tu presupuesto</h2>
-  <form action="https://formsubmit.co/medelsoa@gmail.com" method="POST">
+  <form action="https://formsubmit.co/medelsoa@gmail.com" method="POST" id="formulario-contacto" novalidate>
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://medelprojects.com/gracias.html">
 
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" required>
+    <span class="error" id="error-nombre"></span>
 
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
+    <span class="error" id="error-email"></span>
 
     <label for="mensaje">Mensaje:</label>
     <textarea id="mensaje" name="mensaje" required></textarea>
+    <span class="error" id="error-mensaje"></span>
 
     <button type="submit">Enviar</button>
   </form>
 </section>
 
+<script>
+  const formulario = document.getElementById("formulario-contacto");
+
+  formulario.addEventListener("submit", function(event) {
+    let valido = true;
+
+    // Validación de nombre
+    const nombre = document.getElementById("nombre");
+    const errorNombre = document.getElementById("error-nombre");
+    if (nombre.value.trim() === "") {
+      errorNombre.textContent = "Por favor ingresá tu nombre.";
+      nombre.style.borderColor = "red";
+      valido = false;
+    } else {
+      errorNombre.textContent = "";
+      nombre.style.borderColor = "#ccc";
+    }
+
+    // Validación de email
+    const email = document.getElementById("email");
+    const errorEmail = document.getElementById("error-email");
+    if (!email.value.includes("@")) {
+      errorEmail.textContent = "Ingresá un email válido.";
+      email.style.borderColor = "red";
+      valido = false;
+    } else {
+      errorEmail.textContent = "";
+      email.style.borderColor = "#ccc";
+    }
+
+    // Validación de mensaje
+    const mensaje = document.getElementById("mensaje");
+    const errorMensaje = document.getElementById("error-mensaje");
+    if (mensaje.value.trim() === "") {
+      errorMensaje.textContent = "Escribí tu mensaje.";
+      mensaje.style.borderColor = "red";
+      valido = false;
+    } else {
+      errorMensaje.textContent = "";
+      mensaje.style.borderColor = "#ccc";
+    }
+
+    if (!valido) {
+      event.preventDefault();
+    }
+  });
+</script>
+
+<style>
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+  }
+
+  input:invalid, textarea:invalid {
+    border-color: red;
+  }
+</style>
   <footer>
     <p>&copy; 2025 Medelprojects. Todos los derechos reservados.</p>
     <p>📱 WhatsApp: <a href="https://wa.me/59895221694" target="_blank">Contáctanos</a> | 📧 Email: medelsoa@gmail.com</p>
