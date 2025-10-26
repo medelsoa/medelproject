@@ -207,20 +207,23 @@
   </section>
 
   <section id="formulario">
-    <h2>Solicitá tu presupuesto</h2>
-    <form>
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+  <h2>Solicitá tu presupuesto</h2>
+  <form action="https://formsubmit.co/tu@email.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://medelprojects.com/gracias.html">
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" required></textarea>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
   <footer>
     <p>&copy; 2025 Medelprojects. Todos los derechos reservados.</p>
