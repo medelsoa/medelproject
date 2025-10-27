@@ -3,137 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medelprojects - Servicios Informáticos</title>
+  <title>Medelprojects</title>
   <style>
-    /* Diseño base */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  color: #333;
-  font-size: 16px;
-  line-height: 1.6;
-}
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #fff;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.6;
+    }
 
-/* Encabezado y logo */
-header {
-  text-align: center;
-  padding: 20px;
-}
-header img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 10px;
-}
+    header {
+      padding: 20px 0;
+    }
 
-/* Botón principal */
-button, .cta-button {
-  background-color: #ff6600;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1em;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-button:hover, .cta-button:hover {
-  background-color: #e65c00;
-}
+    header img {
+      width: 200px;
+      height: 93px;
+    }
 
-/* Secciones */
-section {
-  padding: 20px;
-}
-h2 {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
+    .cta-button, button {
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
 
-/* Listas */
-ul {
-  padding-left: 20px;
-}
-li {
-  margin-bottom: 10px;
-}
+    .cta-button:hover, button:hover {
+      background-color: #e65c00;
+    }
 
-/* Formulario */
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-form textarea {
-  resize: vertical;
-}
+    section {
+      padding: 20px 0;
+    }
 
-/* WhatsApp flotante */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  font-size: 30px;
-  line-height: 60px;
-  z-index: 100;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
 
-/* Responsive para móviles */
-@media (max-width: 768px) {
-  header img {
-    width: 80px;
-  }
+    ul {
+      padding-left: 0;
+      list-style-type: none;
+    }
 
-  h2 {
-    font-size: 1.2em;
-  }
+    li {
+      line-height: 1.6em;
+    }
 
-  button, .cta-button {
-    width: 100%;
-    font-size: 1em;
-  }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
 
-  .whatsapp-float {
-    width: 70px;
-    height: 70px;
-    font-size: 36px;
-    bottom: 15px;
-    right: 15px;
-  }
-}
+    form textarea {
+      resize: vertical;
+      height: 150px;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.875em;
+      margin-bottom: 10px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 60px;
+      z-index: 100;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    @media (max-width: 768px) {
+      header img {
+        width: 150px;
+      }
+
+      .cta-button, button {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo1.jpg" alt="Logo Medelprojects" widht="120">
-    <h1>Medelprojects</h1>
+    <img src="assets/Logo1.jpg" alt="Logo Medelprojects">
     <p>Soluciones confiables en mantenimiento y reparación informática</p>
-    <a href="#formulario" class="boton-cta">Solicitá tu presupuesto</a>
+    <a href="#formulario" class="cta-button">Solicitá un presupuesto</a>
   </header>
 
-  <section id="beneficios">
+  <section>
     <h2>¿Por qué elegirnos?</h2>
     <ul>
       <li>✅ Atención rápida y personalizada</li>
       <li>✅ Más de 20 años de experiencia</li>
       <li>✅ Garantía en todos los trabajos</li>
-      <li>✅ Servicio a domicilio en todo Canelones y Montevideo </li>
+      <li>✅ Servicio a domicilio en Canelones y Montevideo</li>
     </ul>
   </section>
 
-  <section id="servicios">
+  <section>
     <h2>Servicios principales</h2>
     <ul>
       <li>🛠️ Reparación de computadoras y notebooks</li>
@@ -143,102 +133,80 @@ form textarea {
     </ul>
   </section>
 
-  <section id="testimonios">
+  <section>
     <h2>Lo que dicen nuestros clientes</h2>
-    <blockquote>“Excelente servicio, me salvaron el trabajo.” – Carla G.</blockquote>
-    <blockquote>“Muy profesionales, rápidos y confiables.” – Martín R.</blockquote>
+    <p>"Excelente servicio, me salvaron el trabajo" – Carix G</p>
+    <p>"Muy profesionales, rápidos y confiables" – Martín R.</p>
   </section>
 
- <section id="formulario">
-  <h2>Solicitá tu presupuesto</h2>
-  <form action="https://formsubmit.co/medelsoa@gmail.com" method="POST" id="formulario-contacto" novalidate>
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://medelsoa.github.io/medelproject/gracias.html">
+  <section id="formulario">
+    <h2>Solicitá tu presupuesto</h2>
+    <form action="https://formsubmit.co/medelsoa@gmail.com" method="POST" id="formulario-contacto" novalidate>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://medelsoa.github.io/medelproject/gracias.html">
 
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
-    <span class="error" id="error-nombre"></span>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <span class="error" id="error-nombre"></span>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <span class="error" id="error-email"></span>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <span class="error" id="error-email"></span>
 
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" required></textarea>
-    <span class="error" id="error-mensaje"></span>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+      <span class="error" id="error-mensaje"></span>
 
-    <button type="submit">Enviar</button>
-  </form>
-</section>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-<script>
-  const formulario = document.getElementById("formulario-contacto");
+  <a href="https://wa.me/59895221694" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">📱</a>
 
-  formulario.addEventListener("submit", function(event) {
-    let valido = true;
+  <script>
+    const formulario = document.getElementById("formulario-contacto");
 
-    // Validación de nombre
-    const nombre = document.getElementById("nombre");
-    const errorNombre = document.getElementById("error-nombre");
-    if (nombre.value.trim() === "") {
-      errorNombre.textContent = "Por favor ingresá tu nombre.";
-      nombre.style.borderColor = "red";
-      valido = false;
-    } else {
-      errorNombre.textContent = "";
-      nombre.style.borderColor = "#ccc";
-    }
+    formulario.addEventListener("submit", function(event) {
+      let valido = true;
 
-    // Validación de email
-    const email = document.getElementById("email");
-    const errorEmail = document.getElementById("error-email");
-    if (!email.value.includes("@")) {
-      errorEmail.textContent = "Ingresá un email válido.";
-      email.style.borderColor = "red";
-      valido = false;
-    } else {
-      errorEmail.textContent = "";
-      email.style.borderColor = "#ccc";
-    }
+      const nombre = document.getElementById("nombre");
+      const errorNombre = document.getElementById("error-nombre");
+      if (nombre.value.trim() === "") {
+        errorNombre.textContent = "Por favor ingresá tu nombre.";
+        nombre.style.borderColor = "red";
+        valido = false;
+      } else {
+        errorNombre.textContent = "";
+        nombre.style.borderColor = "#ddd";
+      }
 
-    // Validación de mensaje
-    const mensaje = document.getElementById("mensaje");
-    const errorMensaje = document.getElementById("error-mensaje");
-    if (mensaje.value.trim() === "") {
-      errorMensaje.textContent = "Escribí tu mensaje.";
-      mensaje.style.borderColor = "red";
-      valido = false;
-    } else {
-      errorMensaje.textContent = "";
-      mensaje.style.borderColor = "#ccc";
-    }
+      const email = document.getElementById("email");
+      const errorEmail = document.getElementById("error-email");
+      if (!email.value.includes("@")) {
+        errorEmail.textContent = "Ingresá un email válido.";
+        email.style.borderColor = "red";
+        valido = false;
+      } else {
+        errorEmail.textContent = "";
+        email.style.borderColor = "#ddd";
+      }
 
-    if (!valido) {
-      event.preventDefault();
-    }
-  });
-</script>
+      const mensaje = document.getElementById("mensaje");
+      const errorMensaje = document.getElementById("error-mensaje");
+      if (mensaje.value.trim() === "") {
+        errorMensaje.textContent = "Escribí tu mensaje.";
+        mensaje.style.borderColor = "red";
+        valido = false;
+      } else {
+        errorMensaje.textContent = "";
+        mensaje.style.borderColor = "#ddd";
+      }
 
-<style>
-  .error {
-    color: red;
-    font-size: 0.9em;
-    margin-top: 5px;
-    display: block;
-  }
-
-  input:invalid, textarea:invalid {
-    border-color: red;
-  }
-</style>
-  <footer>
-    <p>&copy; 2025 Medelprojects. Todos los derechos reservados.</p>
-    <p>📱 WhatsApp: <a href="https://wa.me/59895221694" target="_blank">Contáctanos</a> | 📧 Email: medelsoa@gmail.com</p>
-  </footer>
-
-  <a href="https://wa.me/59895221694" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
-    <i>📱</i>
-  </a>
+      if (!valido) {
+        event.preventDefault();
+      }
+    });
+  </script>
 
 </body>
 </html>
